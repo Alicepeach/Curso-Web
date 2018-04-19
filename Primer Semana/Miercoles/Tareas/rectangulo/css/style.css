@@ -1,0 +1,37 @@
+body{ /*selector básico de etiqueta -> porque va a afectar a 
+	todo lo que esté dentro de la etiqueta body*/
+	background: red;
+}	
+
+h1{
+	color: white;
+	text-align: center;
+}
+
+h2{
+	color: white;
+	text-align: center;
+}
+
+div{
+	margin: auto;
+}
+
+.rectangulo{
+	width: 100px;
+	height: 50px;
+	background: red;
+	position: relative;
+	animation-delay: 5s;
+	animation: rectangulo 30s linear 0s infinite;
+}
+
+
+@keyframes rectangulo{
+	0%{background-color: red; width: 0px;}
+	25%{background-color: yellow; width: 100px; }
+	50%{background-color: blue; width: 200px;}
+	75%{background-color: orange; width: 300px;}
+	100%{background-color: green; width: 400px;}
+}
+
