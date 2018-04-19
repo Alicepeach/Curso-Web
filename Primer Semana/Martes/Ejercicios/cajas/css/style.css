@@ -1,0 +1,36 @@
+#padding{
+	color: green;
+	background: cyan;
+	padding-top: 50px;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-bottom: 50px;
+	/*Con padding "de este lado va a tener tanto"*/
+}
+
+#border{
+	color: blue;
+	background: yellow;
+	/*padding: 50px;*/ /*Para el tamaño, si no especificamos se le aplica a todos los lados*/
+	padding-top: 50px;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-bottom: 50px;
+	/*padding: 50px 60px 70px 150px;*/
+	/*color al borde-->Va después del padding*/
+	border: 50px solid black; /*necesita un unico tamaño*/
+	/*solid black solo aplica para los bordes... no vas a aplicar color a un  margen*/
+}
+
+#margin{/*para dejar pegaditos bloque tras bloque*/
+	color: red;
+	background: #000;
+	margin: 0px 150px 150px 30px; /*arriba,derecho, izquierdo, abajo*/
+}
+
+img{
+	background: orange;
+	padding: 50px;
+	border: 30px solid black;
+	padding: 80px;
+}
