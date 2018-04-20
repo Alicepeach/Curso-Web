@@ -1,0 +1,27 @@
+p{
+	width: 80%;
+	text-align: justify;
+
+}
+
+/*Primero debemos saber el pixelaje de cada pantalla
+Es por lo que media queries no funciona*/
+@media screen and (max-width: 1800px) and (min-width: 992px){
+	body{
+		background: #e0f2f1;
+	}
+}
+
+@media screen and (max-width: 992px) and (min-width: 600px){
+	body{
+		background: #4db6ac;
+		color: #fff;
+	}
+}
+
+@media screen and (max-width: 400px) and (min-width: 0px){
+	body{
+		background: #004d40;
+		color: black;
+	}
+}
