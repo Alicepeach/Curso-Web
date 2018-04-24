@@ -1,0 +1,105 @@
+/*selector de etiqueta
+color picker para buscar colores
+Se llaman de etiqueta porque afectan a todo en lo que se aplican
+*/
+body{
+	background: #043754;
+}
+
+h1{
+	color: white;
+	text-align: center;
+}
+
+h2{
+	color: white;
+	text-align: center;
+}
+
+div{
+	margin: auto;
+}
+/*******************************************************/
+/*selector de clase, pertenece al tipo de selector básico*/
+.cuadrado{
+	width: 50px;
+	height: 50px;
+	background: green;
+	animation-name: cuadrado; /*nombre de la animación que va a jalar*/ 
+	animation-duration: 1s;
+}
+
+/*fotogramas de movimiento*/
+@keyframes cuadrado{
+	0%{background-color: red; width: 50px; border-left: 50px solid transparent}
+	25%{background-color: yellow;}
+	50%{background-color: blue;}
+	100%{background-color: green;}
+}
+
+.rectangulo{
+	width: 100px; 
+	height: 80px;
+	background-color: green;
+	position: relative;
+}
+
+.triangulo{
+	height:0; 
+	width:0;
+	border-left: 50px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 30px solid red;
+	position: relative;
+	animation-name: triangulo;
+	animation-duration: 2s;
+}
+
+.circulo{
+	/*Es un cuadrado con las esquinas redondas*/
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background: white;
+	animation: circulo 1s linear 0s infinite;
+	/*animation-duration: 1s;*/
+}
+
+@keyframes triangulo{
+	/*queremos que se desplace*/
+	0%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid red; left: 0px; top: 0px;}
+	25%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid red; left: 200px; top: 0px;}
+	50%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid red; left: 200px; top: 200px;}
+	75%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid red; left: 0px; top: 200px;}
+	100%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid red; left: 0px; top: 0px;}
+}
+
+@keyframes circulo{
+	from{box-shadow:
+		0px 0 0 0 white, 
+		100px 0 0 0 white,
+		300px 0 0 0 white,
+		500px 0 0 0 white,
+		700px 0 0 0 white,
+		900px 0 0 0 white,
+		1100px 0 0 0 white,
+		1300px 0 0 0 white;}/*desde 0%*/
+	to{box-shadow: 
+		100px 0 0 0 white,
+		300px 0 0 0 white,
+		500px 0 0 0 white,
+		700px 0 0 0 white,
+		900px 0 0 0 white,
+		1100px 0 0 0 white;}/*desde 0%*/
+}
+
+.pacman{
+	margin: 50px 10px;
+}
+
+.pacman1{
+	background: yellow;
+	height: 100px;
+	width: 200px;
+	border-radius: 0 0 100px 100px:/*va a redondear solo dos lados de la caja*/ 
+}

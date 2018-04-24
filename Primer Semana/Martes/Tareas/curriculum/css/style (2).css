@@ -1,0 +1,52 @@
+.foto{
+	width: 30%;
+	border: 50px solid pink;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infoc{
+	color: cyan;
+	background: pink;
+}
+
+.reff{
+	color: red;
+
+}
+h1{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	background: blue;
+}
+
+h2{
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	background: orange;
+	color: white;
+}
+
+#gen1{
+	background: cyan;
+	color: red;
+}
+#gen2{
+	background: blue;
+	color: white;
+
+}
+
+#gen3{
+	background: green;
+	color: pink;
+
+}
+
+li{
+	color: black;
+/*background-color: yellow;*/
+}

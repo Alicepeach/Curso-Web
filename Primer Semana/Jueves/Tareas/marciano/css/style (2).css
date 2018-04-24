@@ -1,0 +1,20 @@
+html{
+
+	background-color: green;
+}
+
+.marcianito{
+	width: 50px;
+	height: 50px;
+	background: green;
+	animation-name: cuadrado; /*nombre de la animación que va a jalar*/ 
+	animation-duration: 1s;
+}
+
+/*fotogramas de movimiento*/
+@keyframes marcianito{
+	0%{scroll-behavior: ; width: 50px; border-left: 50px solid transparent}
+	25%{background-color: yellow;}
+	50%{background-color: blue;}
+	100%{background-color: green;}
+}

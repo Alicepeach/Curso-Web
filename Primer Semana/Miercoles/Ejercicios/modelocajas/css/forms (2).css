@@ -1,0 +1,33 @@
+form{
+	margin: 0 auto;
+	width: 400px;
+	/*padding: 1em;*/
+	border;
+}
+
+div + div{
+	margin-top: 1em;
+}
+
+label{
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+}
+
+input:focus, textarea:focus{
+	border-color: #000;
+}
+
+textarea{
+	font:	1em sans-serif;
+	width: 300px;
+	border: 1px solid #999;
+	/*medida 1--> desplazamiento horizontal
+	medida 2--> desplazamiento vertical
+	medida 3--> opcional difuminacion de la sombra
+	cuarta medida --> opcional,  es el radio de la sombra
+	+ positivo = la sobra se esparce por todas las direcciones
+	- negativo = la sobra se comprime */
+	box-shadow: 5px  5px;
+}

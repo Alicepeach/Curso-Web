@@ -1,0 +1,28 @@
+p{
+	width: 80%;
+	text-align: justify;
+}
+
+/*tamaño de la pantalla*/
+@media screen and (max-width: 1800px) and (min-width: 992px){
+	body{
+	/*Cuando esté en esos rangos de pixelage, va a cambiar de color*/
+		background: red;
+	}
+}
+/*Cada media es para cada tipo de pantalla*/
+/*son rangos*/
+@media screen and (max-width: 992px) and (min-width: 600px) {
+	body{
+		background: #4db6ac;
+		color: #fff;
+	}
+}
+
+@media screen and (max-width: 400px) and (min-width: 0px){
+	body{
+		background: #004d40;
+		color: black;
+
+	}
+}

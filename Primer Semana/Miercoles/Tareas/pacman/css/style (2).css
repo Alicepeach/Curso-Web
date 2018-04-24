@@ -1,0 +1,91 @@
+body{ /*selector básico de etiqueta -> porque va a afectar a 
+	todo lo que esté dentro de la etiqueta body*/
+	background: green;
+}	
+
+h1{
+	color: white;
+	text-align: left;
+}
+
+h2{
+	color: white;
+	text-align: center;
+}
+
+div{
+	margin: auto;
+}
+
+.cuadrado{
+	width: 50px;
+	height: 50px;
+	background: red;
+	animation: cuadrado 10s linear 0s infinite;
+}
+
+
+.circulo{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background: white;
+	animation: circulo 1s linear 0s infinite;
+}
+
+.pacman{
+	margin: 50px 10px;
+	position: relative;
+}
+
+.pacman1{
+	background: yellow;
+	height: 100px;
+	width: 200px;
+	border-radius: 100px 100px 0 0;
+	position: relative;
+	animation:pacman1 450ms linear 0s infinite;
+}
+
+.pacman2{
+	background: yellow;
+	height: 100px;
+	width: 200px;
+	border-radius: 0 0 100px 100px; 
+	position: relative;
+	animation:pacman2 450ms linear 0s infinite;
+}
+
+@keyframes pacman1{
+	0% {transform: rotate(0deg); height: 100px;  width: 200px; left:0px; }
+	50% {transform: rotate(0deg); height: 100px;  width: 200px; left: 100px; }
+	100% {transform: rotate(-45deg); left:500px; height: 110px; width: 220px;}
+}
+
+@keyframes pacman2{
+	0% {transform: rotate(0deg); left:0px; height:100px; width: 200px;}
+	50% {transform: rotate(0deg);  height: 100px;  width: 200px; left:100px;}
+	100% {transform: rotate(45deg); left:500px; height:110px ; width:220px;}
+
+}
+
+@keyframes circulo{
+	from { box-shadow:
+		100px 150px 0 0 white,
+		300px 150px 0 0 white,
+		500px 150px 0 0 white,
+		700px 150px 0 0 white,
+		900px 150px 0 0 white,
+		1100px 150px 0 0 white,
+		1300px 150px 0 0 white;
+	}
+	to{ box-shadow:
+		0px 150px 0 0 white,
+		100px 150px 0 0 white,
+		300px 150px 0 0 white,
+		500px 150px 0 0 white,
+		700px 150px 0 0 white,
+		900px 150px 0 0 white,
+		1100px 150px 0 0 white;
+	}
+}
