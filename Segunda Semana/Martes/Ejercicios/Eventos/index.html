@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta lang = "esp">
+		<title>EVENTOS</title>
+		<title>js</title>
+		<script type = "text/javascript"></script>
+	</head>
+	<body background="img/1975.jpg">
+		<h1>Evento OnClick</h1>
+		<div>
+			<!--Primer imagen antes del click-->
+			<img src="img/gos.jpg" onclick="this.src = 'img/aln.jpg'">
+			<p>Cuando damos click la imagen cambia</p>
+		</div>
+		<script>
+		function vaciar(){
+			document.getElementById("num1").value="";
+		}
+		function cuadrado(){
+			var n = document.getElementById("num1");
+			n.value = n.value*n.value;  
+		}
+		</script>
+
+		numero:
+		<input type="text" name="num1">
+		<button onclick="vaciar()">vaciar</button>
+		<button onclick = "cuadrado()">x<sup>2</sup></button>
+
+		<h3>Escribe tu nombre</h3>
+		<input type="text" id ="cambio" onchange = "mayus()">
+		</body>
+		<script src = "js/hey.js"></script>
+</html>

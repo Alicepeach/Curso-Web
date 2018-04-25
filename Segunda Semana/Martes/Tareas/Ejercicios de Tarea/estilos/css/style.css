@@ -1,0 +1,14 @@
+#blue{
+	background: black;
+	color: red;
+}
+
+#red{
+	background: orange;
+	color: blue;
+}
+
+#green{
+	background: yellow;
+	color: pink;
+}
