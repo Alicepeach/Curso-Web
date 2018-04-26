@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>OXXO</title>
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+<body>
+	<nav>
+    <div class="nav-wrapper #d50000 red accent-4">
+      <a href="#!" class="brand-logo"><img src="img/logoxxo.png" alt="OXXO" id="logoxxo"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="unete.html">Únete</a></li>
+        <li class="active"><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav #d50000 red accent-4" id="mobile-demo">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="unete.html">Únete</a></li>
+        <li class="active"><a href="contacto.html">Contacto</a></li>
+  </ul>
+	
+	<main>
+    <section class="container">
+    <div class="row">
+      <article class="col s5">
+        <h3>Envianos un e-mail</h3>
+        <form method="POST" action="formulario-contacto.php">
+          <div class="input-field">
+            <i class="material-icons prefix">perm_identity</i>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" required>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">person_pin</i>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" required>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+          </div>
+
+          <div class="input-field">
+            <i class="material-icons prefix">mode_edit</i>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="" rows="10" class="materialize-textarea"  length="140" required></textarea>
+          </div>
+          
+          <p class="center-align">
+            <button class="waves-effect waves-light btn" type="submit"><i class="material-icons right">send</i>enviar</button>
+            <br>
+            <br>
+            <br>
+          </p>
+        </form>
+            <form action="procesar_datos.php" method="post">
+                <label for="condiciones">Acepta las <a href="pagina_condiciones.html">condiciones</a></label><input type="checkbox" name="condiciones" />
+                <input type="submit" value="Enviar" />
+            </form>
+      </article>
+      <article class = "col s5 offset-s1">
+              <h3>Llámanos</h3>
+              <div class = "col s1">
+                  <i class="material-icons">call</i>  
+              </div>
+                  <label for="apellido">&nbsp; 5544778899</label>
+              
+              <h3>Nuestras oficinas</h3>
+              <br>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15060.47585155906!2d-99.15115040673483!3d19.320643462015546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01ce1f2352bd%3A0x645cf554fb237a97!2sOXXO+Arvizu!5e0!3m2!1ses!2smx!4v1524762271284" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </article>  
+    </div>
+  </section>
+		
+	</main>
+
+   <footer class="page-footer #d50000 red accent-4">
+          
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/app.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+</html>

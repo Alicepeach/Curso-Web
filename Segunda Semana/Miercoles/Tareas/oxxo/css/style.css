@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+main {
+    flex: 1 0 auto;
+}
+
+#logoxxo{
+	margin-top: 5px;
+	margin-left: 5px;
+	height: 55px;
+}
+
+h3{
+	color: red;
+	font-family: 'Indie Flower', cursive;
+
+}
